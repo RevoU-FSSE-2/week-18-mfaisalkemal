@@ -1,0 +1,134 @@
+{
+	"info": {
+		"_postman_id": "0b9ba45a-010e-47d9-82e2-207e21d3c2ea",
+		"name": "mfaisalkemal-w17w18",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "28912545"
+	},
+	"item": [
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "Register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\":\"admin\",\r\n    \"password\":\"admin123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://34.142.252.30:3000/register"
+					},
+					"response": []
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\":\"admin\",\r\n    \"password\":\"admin123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "34.142.252.30:3000/login"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "ToDos",
+			"item": [
+				{
+					"name": "Create",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsInVzZXJuYW1lIjoiYWRtaW4iLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3MDM0MTI1NDh9.jtU2BRjsPSgGmvu2PtJaBed9o7p48P5F5pwxPpkHyDE"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"todoTask\":\"Belanja\",\r\n    \"todoPriority\":\"low\",\r\n    \"todoDue\":\"2023-12-26\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "34.142.252.30:3000/create"
+					},
+					"response": []
+				},
+				{
+					"name": "Retrieve",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsInVzZXJuYW1lIjoiYWRtaW4iLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3MDM0MTI1NDh9.jtU2BRjsPSgGmvu2PtJaBed9o7p48P5F5pwxPpkHyDE"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "34.142.252.30:3000/retrieve"
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsInVzZXJuYW1lIjoiYWRtaW4iLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3MDM0MTI1NDh9.jtU2BRjsPSgGmvu2PtJaBed9o7p48P5F5pwxPpkHyDE"
+							}
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"todoTask\":\"Belanja\",\r\n    \"todoPriority\":\"bing\",\r\n    \"todoDue\":\"2023-12-27\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "34.142.252.30:3000/update/5"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsInVzZXJuYW1lIjoiYWRtaW4iLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3MDM0MTI1NDh9.jtU2BRjsPSgGmvu2PtJaBed9o7p48P5F5pwxPpkHyDE"
+							}
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": "34.142.252.30:3000/delete/1"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
