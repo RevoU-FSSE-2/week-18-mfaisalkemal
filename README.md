@@ -1,1 +1,11 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/-Z3-Ss4P)
+Dockerize to Google Cloud Compute Engine
+
+FE: http://34.142.252.30:3001/
+
+BE: http://34.142.252.30:3000/
+
+admin account
+```
+username: admin
+password: admin123
+```
